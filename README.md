@@ -1,6 +1,4 @@
-Here’s the cleaned-up, student-ready version.
-
-## Argo CD GitOps Deployment on AWS EKS
+# Argo CD GitOps Deployment on AWS EKS
 
 **Objective:** Create an EKS cluster, install Argo CD, connect a GitHub repository, deploy an Nginx application using GitOps, and clean up the environment.
 
