@@ -1,0 +1,21 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+
+metadata:
+  name: nginx-cpu-scaler
+
+spec:
+
+  scaleTargetRef:
+    name: nginx
+
+  minReplicaCount: 1
+  maxReplicaCount: 5
+
+  triggers:
+
+    - type: cpu
+      metricType: Utilization
+
+      metadata:
+        value: "50"
